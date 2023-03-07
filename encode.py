@@ -24,7 +24,20 @@ def encode(encoding):
         encoded += new_digit
     return encoded
 
+# decodes encoded password
+def decoder(password): #added a comment since I don't have a partner
 
+    decoded = ""
+
+    # iterates over the string
+    for i in range(len(password)):
+        subtract = int(password[i]) - 3
+
+        if subtract < 0:
+            subtract += 10
+        decoded += str(subtract)
+
+    return decoded
 
 
 if __name__ == "__main__":
