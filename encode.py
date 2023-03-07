@@ -10,7 +10,8 @@ def main():
             new = encode(encoding)
             print(menu)
         elif choice == "2":
-            print(f'The encoded password is {new}, and the original password is {encoding}.\n')
+            normal = decoder(encode(encoding))
+            print(f'The encoded password is {new}, and the original password is {normal}.\n')
             print(menu)
         elif choice == "3":
             encode_running = False
